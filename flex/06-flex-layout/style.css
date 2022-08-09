@@ -5,6 +5,8 @@ body {
   margin: 0;
   overflow: hidden;
   font-family: Roboto, sans-serif;
+  display: flex;
+  flex-direction: column;
 }
 
 img {
@@ -16,6 +18,7 @@ button {
   border: none;
   border-radius: 8px;
   background: #eee;
+  padding: 8px 16px;
 }
 
 input {
@@ -24,4 +27,53 @@ input {
   padding: 8px 24px;
   width: 400px;
   margin-bottom: 16px;
+}
+
+ul {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.header {
+  display: flex;
+  margin-bottom: auto;
+  padding: 10px;
+}
+
+.footer {
+  display: flex;
+  margin-top: auto;
+  padding: 10px;
+  background-color: #eeeeee;
+}
+
+/* Podía haber puesto header y footer a la vez, tal que así:
+.header, .footer {}
+DUH!!! 
+
+En todos estos tutoriales llego a resultados muy parecidos, pero por otros medios*/
+
+.left-links {
+  display: flex;
+  margin-right: auto;
+  gap: 16px;
+  padding: 0;
+}
+
+.right-links {
+  display: flex;
+  margin-left: auto;
+  gap: 16px;
+}
+
+.content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
